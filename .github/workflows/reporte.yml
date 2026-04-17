@@ -1,7 +1,8 @@
 name: Reporte HxH
 
 on:
-    
+  schedule:
+    - cron: '10 * * * *'  # Executa todo horário cheio + 30 min (ex: 01:30, 02:30...)
   workflow_dispatch:      # Permite rodar manualmente pelo GitHub
 
 jobs:
